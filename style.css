@@ -1,5 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    background-color: #2f3136;
+    margin: 0;
+    color: #d7d6d9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    float: left;
+    padding: 20px;
     background-color: #36393f;
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.line {
+    float: left;
+    padding: 20px;
+    background-color: #36393f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    width: 93%;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 20px;
+    background-color: #36393f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column.side,
+    .line,
+    .header,
+    .column.middle {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .header {
+        width: 100%;
+    }
 }
