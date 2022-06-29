@@ -92,6 +92,7 @@ li a:hover {
 
     .column.side,
     .line,
+    ul,
     .header,
     .column.middle {
         width: 100%;
